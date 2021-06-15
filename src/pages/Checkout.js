@@ -1,7 +1,7 @@
 import React from "react";
 
 //importeer FCC als object - provide is namelijk object wat het meestuurt
-import { FruitCounterContext} from "../App";
+import { FruitCounterContext } from "../App";
 import { useContext } from "react";
 
 export default function Checkout() {

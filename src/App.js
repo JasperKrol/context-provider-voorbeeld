@@ -8,7 +8,7 @@ import Home from "./pages/Home";
 // 1 import createContext from react
 import { useState, createContext } from "react";
 // 2 export de context, zodat je hem elders kan importeren
-export const FruitCounterContext = createContext(null)
+export const FruitCounterContext = createContext(0)
 
 function App() {
   const [apples, setApples] = useState(0);
@@ -58,11 +58,11 @@ function App() {
           <Route path="/checkout">
             <Checkout
                 //  deze mogen weg, state is opgeslagen in de context
-                pears={pears} apples={apples} bananas={bananas}
+                // pears={pears} apples={apples} bananas={bananas}
             />
           </Route>
           <Route path="/">
-            <Home totalFruit={pears + apples + bananas} />
+            <Home />
           </Route>
         </Switch>
       </header>
